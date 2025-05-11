@@ -174,7 +174,7 @@ export default function App() {
 
   // below we load questions from a fake API:
   useEffect(function () {
-    fetch("http://localhost:9000/questions")
+    fetch("http://localhost:8000/questions")
       .then((res) => res.json())
       .then((data) => dispatch({ type: "dataReceived", payload: data })) // once we receive the data, we use this dispatch() to set the questions state with the data
       //                                                                    received
